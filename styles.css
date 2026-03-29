@@ -1,8 +1,8 @@
 
 
-main {
+/*main {
     background-color: #335C67;
-}
+}*/
 
 .navbar {
     background-color: #E09F3E;
@@ -19,13 +19,15 @@ main {
     letter-spacing: -0.176px;
 }
 
-.img-fluid {
+/*.img-fluid {
     opacity: 0.5;
     height: 268px;
     color: white;
     
+}*/
+.position-relative{
+    background-color: #335C67;
 }
-
 .position-relative h2 {
     color: #000;
     text-align: center;
@@ -43,7 +45,7 @@ main {
     font-family: "Riant Display";
     font-size: 25px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 8000%;
     line-height: 150%; /* 22.5px */
     letter-spacing: -0.165px;
 }
@@ -52,4 +54,43 @@ main {
     border-bottom: 2px solid #000; 
     display: inline-block; 
     padding-bottom: 5px;
+}
+.py-5{
+    background-color: #335C67;
+}
+.py-5 h1 {
+    color: #203037;
+    text-align: center;
+    font-family: Oaks;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 150%; /* 48px */
+    letter-spacing: -0.352px;
+    }
+
+.py-5 h4 {
+    margin: auto;
+
+    color: #203037;
+    text-align: center;
+    font-family: Oaks;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 16.5px */
+    letter-spacing: -0.121px;
+}
+.section-one{
+    background-color: #335C67;
+}
+.section-one h1 {
+    color: #203037;
+    text-align: center;
+    font-family: Oaks;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 150%; /* 48px */
+    letter-spacing: -0.352px;
 }
