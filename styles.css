@@ -25,6 +25,7 @@
     color: white;
     
 }*/
+
 .position-relative{
     background-color: #335C67;
 }
@@ -93,4 +94,8 @@
     font-weight: bold;
     line-height: 150%; /* 48px */
     letter-spacing: -0.352px;
+}
+
+.section-two {
+    
 }
