@@ -1,11 +1,25 @@
 
 
-body {
+main {
     background-color: #335C67;
 }
 
-.navbar{
+.navbar {
     background-color: #E09F3E;
     height: 53px;
     width: auto;
+
+    color: #000;
+    text-align: center;
+    font-family: "Sweet Titling No. 26";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.176px;
+}
+
+.img-faded {
+    opacity: 0.5;
+    height: 268px;
 }
