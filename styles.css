@@ -19,12 +19,12 @@
     letter-spacing: -0.176px;
 }
 
-/*.img-fluid {
-    opacity: 0.5;
-    height: 268px;
-    color: white;
-    
-}*/
+.navbar-brand .logo {
+    height: 40px;        
+    width: auto;        
+    margin-right: 1px; 
+    vertical-align: middle;
+}
 
 .position-relative{
     background-color: #335C67;
@@ -51,6 +51,13 @@
     letter-spacing: -0.165px;
 }
 
+.position-relative img {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+
 .underline {
     border-bottom: 2px solid #000; 
     display: inline-block; 
@@ -59,6 +66,7 @@
 .py-5{
     background-color: #335C67;
 }
+
 .py-5 h1 {
     color: #203037;
     text-align: center;
@@ -71,7 +79,7 @@
     }
 
 .py-5 h4 {
-    margin: auto;
+    padding: 0 20px;
 
     color: #203037;
     text-align: center;
@@ -82,10 +90,21 @@
     line-height: 150%; /* 16.5px */
     letter-spacing: -0.121px;
 }
+
 .section-one{
     background-color: #335C67;
 }
+
+.stroke {
+    width: 80%;
+    height: 2px;
+    background-color: #203037;
+    margin: 0 auto;
+}
+
 .section-one h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #203037;
     text-align: center;
     font-family: Oaks;
@@ -94,6 +113,12 @@
     font-weight: bold;
     line-height: 150%; /* 48px */
     letter-spacing: -0.352px;
+}
+
+.section-one img {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .section-two {
@@ -109,6 +134,7 @@
     font-weight: bold;
     line-height: 150%; /* 19.5px */
     letter-spacing: -0.143px;
+    padding-top: 10px;
 }
 
 .section-two h3 {
@@ -136,16 +162,16 @@
 .section-three h2 {
     color: #9E2A2B;
     text-align: center;
-    font-family: "Riant Display";
+    font-family: "riant-display", serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 90%;
 }
 
 .section-three h3 {
     color: #9E2A2B;
-    font-family: "Riant Display";
+    font-family: "riant-display", serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
