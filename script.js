@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const text = document.getElementById("text");
   const openHours = document.getElementById("openHours");
 
-  const mm = gsap.matchMedia();
   
 
   /* ==================================================
@@ -81,15 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  mm.add("(min-width: 1700px)", () => { // makes the menu appear slower on bigger screens
-    // Large screens
-    gsap.from("menuImage", {
-      x: -150,
-      opacity: 0,
-      duration: 1,   
-      ease: "power3.out"
-    });
-  });
+
 
   
 
