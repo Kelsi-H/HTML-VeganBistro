@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuImageTwo = document.getElementById("menuImageTwo");
   const title = document.getElementById("title");
   const text = document.getElementById("text");
+  
 
 
 
@@ -45,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+
   /* ==================================================
      Example 6 — Second GSAP Animation (Cocktails image)
      (ENABLED)
@@ -55,10 +57,23 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from(title, {
       x: -150,
       opacity: 0,
-      duration: 6,
+      duration: 4,
       ease: "power3.out",
       delay: 0.3
     });
   }
+
+  if (typeof gsap === "undefined") {
+    console.warn("GSAP is not loaded. Check the GSAP <script> tag order.");
+  } else if (text) {
+    gsap.from(text, {
+      x: -150,
+      opacity: 0,
+      duration: 4,
+      ease: "power3.out",
+      delay: 0.3
+    });
+  }
+
 
 });

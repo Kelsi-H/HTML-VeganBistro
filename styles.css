@@ -70,7 +70,7 @@
 .py-5 h1 {
     color: #203037;
     text-align: center;
-    font-family: Oaks;
+    font-family: "oaks", sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: bold;
@@ -83,7 +83,7 @@
 
     color: #203037;
     text-align: center;
-    font-family: Oaks;
+   font-family: "oaks", sans-serif;
     font-size: 11px;
     font-style: normal;
     font-weight: 400;
