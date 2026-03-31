@@ -107,7 +107,7 @@
     padding-bottom: 20px;
     color: #203037;
     text-align: center;
-    font-family: Oaks;
+    font-family: "oaks", sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: bold;
@@ -128,7 +128,7 @@
 .section-two h2 {
     color: #7D5016;
     text-align: center;
-    font-family: Oaks;
+    font-family: "oaks", sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: bold;
@@ -139,7 +139,7 @@
 
 .section-two h3 {
     color: #AF7224;
-    font-family: Oaks;
+    font-family: "oaks", sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
