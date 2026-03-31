@@ -1,8 +1,8 @@
 
 
-/*main {
-    background-color: #335C67;
-}*/
+html, body { /* fixes white bar on the right */
+  overflow-x: hidden;
+}
 
 .navbar {
     background-color: #E09F3E;
@@ -201,5 +201,8 @@
 
     .section-two h3 {
         font-size: 20px;
+        margin-left: 50px;
     }
+
+
 }
