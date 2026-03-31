@@ -1,11 +1,4 @@
-/*
-  JavaScript & Animation — Worksheet Examples (1–6)
 
-  IMPORTANT:
-  - Normally run ONE example at a time.
-  - Examples 5 and 6 can run together because they animate different images.
-  - Make sure Examples 2–4 remain commented out (they animate the same element).
-*/
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -18,13 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const title = document.getElementById("title");
   const text = document.getElementById("text");
   const openHours = document.getElementById("openHours");
+
+  const mm = gsap.matchMedia();
   
 
-
-
   /* ==================================================
-     Example 5 — First GSAP Animation (Menu image)
-     (ENABLED)
+     Image Goes up
   ================================================== */
   if (typeof gsap === "undefined") {
     console.warn("GSAP is not loaded. Check the GSAP <script> tag order.");
@@ -32,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from(menuImage, {
       y: 100,
       opacity: 0,
-      duration: 1.5,
+      duration: 4,
       ease: "power2.out"
     });
   }
@@ -43,15 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from(menuImageTwo, {
       y: 100,
       opacity: 0,
-      duration: 1.5,
+      duration: 4,
       ease: "power2.out"
     });
   }
 
 
   /* ==================================================
-     Example 6 — Second GSAP Animation (Cocktails image)
-     (ENABLED)
+     Text/Image Swipe in
   ================================================== */
   if (typeof gsap === "undefined") {
     console.warn("GSAP is not loaded. Check the GSAP <script> tag order.");
@@ -59,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from(title, {
       x: -150,
       opacity: 0,
-      duration: 4,
+      duration: 6,
       ease: "power3.out",
       delay: 0.3
     });
@@ -83,11 +74,24 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from(openHours, {
       x: -150,
       opacity: 0,
-      duration: 2,
+      duration: 8,
       ease: "power3.out",
       delay: 0.3
     });
   }
+
+
+  mm.add("(min-width: 1700px)", () => { // makes the menu appear slower on bigger screens
+    // Large screens
+    gsap.from("menuImage", {
+      x: -150,
+      opacity: 0,
+      duration: 1,   
+      ease: "power3.out"
+    });
+  });
+
+  
 
 
 });
