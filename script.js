@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuImageTwo = document.getElementById("menuImageTwo");
   const title = document.getElementById("title");
   const text = document.getElementById("text");
+  const openHours = document.getElementById("openHours");
   
 
 
@@ -75,5 +76,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  if (typeof gsap === "undefined") {
+    console.warn("GSAP is not loaded. Check the GSAP <script> tag order.");
+  } else if (openHours) {
+    gsap.from(openHours, {
+      x: -150,
+      opacity: 0,
+      duration: 2,
+      ease: "power3.out",
+      delay: 0.3
+    });
+  }
+  
 
 });
