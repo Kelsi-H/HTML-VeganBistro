@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
      Shared element references
   -------------------------------------------------- */
   const menuImage = document.getElementById("menuImage");
+  const menuImageTwo = document.getElementById("menuImageTwo");
+  const title = document.getElementById("title");
+  const text = document.getElementById("text");
 
 
 
@@ -31,6 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  if (typeof gsap === "undefined") {
+    console.warn("GSAP is not loaded. Check the GSAP <script> tag order.");
+  } else if (menuImageTwo) {
+    gsap.from(menuImageTwo, {
+      y: 100,
+      opacity: 0,
+      duration: 1.5,
+      ease: "power2.out"
+    });
+  }
 
   /* ==================================================
      Example 6 — Second GSAP Animation (Cocktails image)
@@ -38,8 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
   ================================================== */
   if (typeof gsap === "undefined") {
     console.warn("GSAP is not loaded. Check the GSAP <script> tag order.");
-  } else if (cocktailImage) {
-    gsap.from(cocktailImage, {
+  } else if (title) {
+    gsap.from(title, {
       x: -150,
       opacity: 0,
       duration: 6,
