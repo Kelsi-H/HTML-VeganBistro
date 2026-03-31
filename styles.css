@@ -130,10 +130,9 @@ html, body { /* fixes white bar on the right */
     letter-spacing: -0.352px;
 }
 
-.section-one img {
-    margin: 0;
-    max-width: 100%;
-    height: auto;
+.section-one .row .col-6 {
+  display: flex;
+  justify-content: center;
 }
 
 .section-two {
@@ -296,7 +295,7 @@ html, body { /* fixes white bar on the right */
     .py-5 h4 {
         font-size: 25px;
         margin-left: 120px;
-        margin-right: 102px;
+        margin-right: 120px;
     }
 
     .section-one h1 {
@@ -322,5 +321,88 @@ html, body { /* fixes white bar on the right */
     }
     .section-three h1 {
         font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+
+    .section-two h2 {
+        font-size: 45px;
+    }
+
+    .section-two h3 {
+        font-size: 35px;
+        margin-left: 140px;
+        padding-bottom: 10px;
+    }
+    .section-three h2 {
+        font-size: 50px;
+    }
+
+    .section-three h3 {
+        font-size: 30px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .section-three h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+
+    .navbar {
+        font-size: 30px;
+    }
+
+    .position-relative h2 {
+        font-size: 45px;
+    }
+
+    .position-relative h1 {
+        font-size: 35px;
+        
+    }
+
+    .py-5 h1 {
+        font-size: 60px;
+    }
+
+    .py-5 h4 {
+        font-size: 25px;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    .section-one h1 {
+        font-size: 60px;
+    }
+
+    .section-one .row .col-6 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-two h2 {
+        font-size: 50px;
+    }
+
+    .section-two h3 {
+        font-size: 40px;
+        margin-left: 250px;
+        padding-bottom: 10px;
+    }
+    .section-three h2 {
+        font-size: 60px;
+    }
+
+    .section-three h3 {
+        font-size: 35px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    .section-three h1 {
+        font-size: 35px;
     }
 }
