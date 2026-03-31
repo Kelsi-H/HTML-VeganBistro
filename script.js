@@ -9,6 +9,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+
   /* --------------------------------------------------
      Shared element references
   -------------------------------------------------- */
@@ -87,6 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
       delay: 0.3
     });
   }
-  
+
 
 });
