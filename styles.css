@@ -19,6 +19,21 @@ html, body { /* fixes white bar on the right */
     letter-spacing: -0.176px;
 }
 
+.navbar-brand {
+    background-color: #E09F3E;
+    height: 53px;
+    width: auto;
+
+    color: #000;
+    text-align: center;
+    font-family: "sweet-titling-no-26", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.176px;
+}
+
 .navbar-brand .logo {
     height: 40px;        
     width: auto;        
@@ -178,9 +193,23 @@ html, body { /* fixes white bar on the right */
     line-height: normal;
 }
 
+.section-three h1 {
+    color: #9E2A2B;
+    font-family: "riant-display", serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 /* Edits for bigger screen sizes */
 
 @media screen and (min-width: 800px) {
+
+    .navbar {
+        font-size: 24px;
+    }
+
     .py-5 h1 {
         font-size: 50px;
     }
@@ -203,6 +232,95 @@ html, body { /* fixes white bar on the right */
         font-size: 20px;
         margin-left: 50px;
     }
+    .section-three h2 {
+        font-size: 30px;
+    }
+
+    .section-three h3 {
+        font-size: 20px;
+    }
+    .section-three h1 {
+        font-size: 20px;
+    }
+}
 
 
+
+@media screen and (min-width: 1200px) {
+
+    .navbar {
+        font-size: 30px;
+    }
+
+    .section-two h2 {
+        font-size: 35px;
+    }
+
+    .section-two h3 {
+        font-size: 25px;
+        margin-left: 90px;
+        padding-bottom: 10px;
+    }
+    .section-three h2 {
+        font-size: 40px;
+    }
+
+    .section-three h3 {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    .section-three h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .navbar {
+        font-size: 30px;
+    }
+
+    .position-relative h2 {
+        font-size: 45px;
+    }
+
+    .position-relative h1 {
+        font-size: 35px;
+        
+    }
+
+    .py-5 h1 {
+        font-size: 50px;
+    }
+
+    .py-5 h4 {
+        font-size: 25px;
+        margin-left: 120px;
+        margin-right: 102px;
+    }
+
+    .section-one h1 {
+        font-size: 50px;
+    }
+
+    .section-two h2 {
+        font-size: 35px;
+    }
+
+    .section-two h3 {
+        font-size: 25px;
+        margin-left: 90px;
+        padding-bottom: 10px;
+    }
+    .section-three h2 {
+        font-size: 40px;
+    }
+
+    .section-three h3 {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    .section-three h1 {
+        font-size: 25px;
+    }
 }
